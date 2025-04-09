@@ -14,4 +14,7 @@ def main():
                 print("Invalid input. Please enter A, B, C, or D.")
                 correct_answer = input("Enter the correct answer (A, B, C, or D):")
 
-                
+            file.write(f"Question: {question}\n")
+            for i, answer in enumerate(answers):
+                file.write(f"Option {chr(97 + i)}: {answer}\n")
+            file.write(f"Correct answer: {correct_answer}\n")
