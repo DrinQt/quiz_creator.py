@@ -18,3 +18,9 @@ def main():
             for i, answer in enumerate(answers):
                 file.write(f"Option {chr(97 + i)}: {answer}\n")
             file.write(f"Correct answer: {correct_answer}\n")
+
+            if input("Do you want to add another question? (yes/no): ").lower() != "yes":
+                break
+
+if __name__ == "__main__":
+    main()
