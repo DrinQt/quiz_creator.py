@@ -1,0 +1,34 @@
+question 1 : What is the capital of the Philippines
+a.) Cebu City
+b.) Davao City
+c.) Manila
+d.) Quezon City
+Correct Answer : c
+
+question 2 : What is the national flower of the Philippines
+a.) Sampaguita
+b.) Rose
+c.) Orchid
+d.) Gumamela
+Correct Answer : a
+
+question 3 : Who is the National Hero of the Philippines
+a.) Andres Bonifacio
+b.) AC Bonifacio
+c.) Jose Rizal
+d.) Juan Luna
+Correct Answer : c
+
+question 4 : What is the official currency of the Philippines
+a.) Peso
+b.) Dollar
+c.) Pound
+d.) Rupees
+Correct Answer : a
+
+question 5 : What is the national dish of the Philippines
+a.) Pastil
+b.) Siomai Rice
+c.) Adobo
+d.) Pares
+Correct Answer : c
