@@ -12,3 +12,7 @@ def load_questions(filename):
                 question_line = lines[i].strip()
                 options = [lines [i + j].strip() for j in range(1, 5)] # For the 4 options
                 correct_answer_line = lines[i + 5].strip()
+
+                #Get the correct answer from the options
+                correct_answer = correct_answer_line.split(': ')[1].strip().upper() #For the letters (A, B, C, D)
+                
