@@ -27,4 +27,19 @@ def load_questions(file_name):
         print(f"An error occurred: {e}")
     return questions
 
+def ask_question(question, options, correct_answer):
+    """Ask the user a question and check if the answer is correct."""
+    print(question)
+    for option in options:
+        print(option)
+
+    user_answer = input("Your answer (a/b/c/d): ").strip().lower()
+
+    if user_answer == correct_answer:
+        print("Galing ah! You got it right!")
+    else:
+        print(f"Mali! Wrong answer! The correct answer is: {correct_answer}")
+
+
+
     
