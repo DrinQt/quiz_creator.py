@@ -20,10 +20,14 @@ def load_questions(filename):
                     else:
                         print(f"Invalid format for correct answer in line: {correct_answer_line}")
                         continue # Skip this question if format is invalid
-                    
+
                     # Store the question, options, and correct answer in a tuple
                     questions.append((question_line, options, correct_answer))
-
+    except FileNotFoundError:
+        print(f"File {filename} not found. Please check the file path.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    
     return questions
 
 def quiz(questions):
