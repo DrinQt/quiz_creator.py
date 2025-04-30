@@ -34,4 +34,11 @@ def quiz(questions):
         else:
             print(f"Sorry, the correct answer is {correct_answer}.")
 
-            
+        #If the user wants to continue or quit
+        play_again = input("Do you want to continue? (yes/no): ")
+        if play_again.lower() != 'yes':
+            break
+
+    
+
+
