@@ -40,6 +40,19 @@ def ask_question(question, options, correct_answer):
     else:
         print(f"Mali! Wrong answer! The correct answer is: {correct_answer}")
 
+def main():
+    """Main Function to run the quiz."""
+    file_name = 'quiz_questionnaires.txt'
 
+    while True:
+        questions = load_questions(file_name)
+        
+        if not questions:
+            print("No questions available.")
+            return
 
+        questions, options,correct_answer = random.choice(questions) # Randomly select a question
+        ask_question(question, options, correct_answer)
+
+        
     
