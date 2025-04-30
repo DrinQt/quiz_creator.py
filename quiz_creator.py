@@ -15,4 +15,7 @@ def load_questions(filename):
 
                 #Get the correct answer from the options
                 correct_answer = correct_answer_line.split(': ')[1].strip().upper() #For the letters (A, B, C, D)
+
+                # Store the question, options, and correct answer
+                questions.append((question_line, options, correct_answer))
                 
