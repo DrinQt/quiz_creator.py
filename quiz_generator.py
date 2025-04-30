@@ -52,11 +52,14 @@ def main():
             return
 
         questions, options,correct_answer = random.choice(questions) # Randomly select a question
-        ask_question(question, options, correct_answer)
+        ask_question(questions, options, correct_answer)
 
         # Ask if the user wants to continue
         play_again = input("Do you want to play again? (yes/no): ").strip().lower()
         if play_again != 'yes':
             print("Thanks for playing my Quiz!")
             break
+
+if __name__ == "__main__":
+    main()
     
