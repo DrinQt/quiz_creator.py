@@ -26,4 +26,12 @@ def quiz(questions):
         print(question) # Prints the question
         for option in options:
             print(option) # Prints the options
+
+        user_answer = input("Your answer (A, B, C, D): ").strip().upper() # Get the user's answer
+
+        if user_answer == correct_answer:
+            print("Wow! You got it right!")
+        else:
+            print(f"Sorry, the correct answer is {correct_answer}.")
+
             
