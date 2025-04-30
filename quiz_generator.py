@@ -14,4 +14,11 @@ def load_questions(file_name):
                 question = lines[0].strip() # First line is the question
                 options = [line.strip() for line in lines[1:-1]] # All lines except the last one are options
                 correct_answer_line = lines[-1] # Last line is the correct answer
-                
+
+                # Getting the correct answer
+                if "Correct Answer :" in correct_answer_line:
+                    correct_answer = correct_answer_line.split(':')[-1].strip()
+                    questions.append((question, options, correct_answer))
+                else:
+                    print(f"Skipping Invalid block: {block}")
+    
