@@ -18,4 +18,12 @@ def load_questions(filename):
 
                 # Store the question, options, and correct answer
                 questions.append((question_line, options, correct_answer))
-                
+    
+    return questions
+def quiz(questions):
+    ransom.shuffle(questions) # Shuffle the questions
+    for question, options, correct_answer in questions:
+        print(question) # Prints the question
+        for option in options:
+            print(option) # Prints the options
+            
