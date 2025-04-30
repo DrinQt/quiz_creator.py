@@ -21,4 +21,10 @@ def load_questions(file_name):
                     questions.append((question, options, correct_answer))
                 else:
                     print(f"Skipping Invalid block: {block}")
+    except FileNotFoundError:
+        print(f"File {file_name} not found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    return questions
+
     
